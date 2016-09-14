@@ -1,0 +1,48 @@
+@font-face {
+    font-family: spacebook;
+    src: url(Starjedi.ttf);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+    color: yellow;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    float: left;
+}
+
+.logo-text {
+    font-size: 2em;
+    color: yellow;
+}
+
+.header li {
+    display: inline-block;
+    float: right;
+    margin-left: 5px;
+    font-size: 1.7em;
+    color: yellow;
+}
+
+.main-content {
+    padding-bottom: 40px;
+    background-image: url(images/starwars-characters.jpg);
+    height: 100vh;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 40px;
+}

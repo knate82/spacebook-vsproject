@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SpaceBook</title>
+    <link rel="stylesheet" href="mystyles.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-sm-4">
+                <span class="my-nav">
+               <a class="logo-text center-block" href="/#/home"><img class="img-responsive logo" src="images/Death-Star-logo.jpeg">Spacebook</a> 
+               </span>
+            </div>
+            <div class="col-sm-8">
+                <span class="my-nav">
+                <ul>
+                    <li><a href="/#/contact">Contact Us</a></li>
+                    <li class="active"><a href="/#/home">Home |</a></li>
+                </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <ng-view></ng-view>
+
+    <footer>
+        <p>footer shit</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="/views/home.js"></script>
+</body>
+
+</html>
