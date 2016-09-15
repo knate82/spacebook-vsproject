@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MainApp">
 
 <head>
     <meta charset="UTF-8">
@@ -22,23 +22,15 @@
 <body>
     <div class="container-fluid">
         <div class="row header">
-            <div class="col-sm-4">
+            <div class="col-sm-12">
                 <span class="my-nav">
-               <a class="logo-text center-block" href="/#/home"><img class="img-responsive logo" src="images/Death-Star-logo.jpeg">Spacebook</a> 
+               <a class="main-logo-text center-block" href="#/home"><img class="img-responsive logo" src="images/Death-Star-logo.jpeg">Spacebook</a> 
                </span>
-            </div>
-            <div class="col-sm-8">
-                <span class="my-nav">
-                <ul>
-                    <li><a href="/#/contact">Contact Us</a></li>
-                    <li class="active"><a href="/#/home">Home |</a></li>
-                </ul>
-                </span>
             </div>
         </div>
     </div>
 
-    <ng-view></ng-view>
+    <div ng-view></div>
 
     <footer>
         <p>footer shit</p>
@@ -47,7 +39,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
     <script src="app.js"></script>
+    <script src="/directives/about.js"></script>
+    <script src="/services/httpservice.js"></script>
     <script src="/views/home.js"></script>
+    <script src="/views/joined.js"></script>
+    
 </body>
 
 </html>

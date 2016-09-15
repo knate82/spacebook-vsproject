@@ -3,15 +3,41 @@
     src: url(Starjedi.ttf);
 }
 
+@font-face {
+    font-family: starstyled;
+    src: url(starjhol.ttf);
+}
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: black;
+}
+
+.good-bad {
+    width: 100%;
+    margin-top: 0;
+}
+
+.about-info {
+    float: right;
+}
+
+.home-content {
+    margin-bottom: 80px;
+}
+
 .header {
     background-color: black;
     color: yellow;
+}
+
+.logo-text {
+    font-family: starstyled;
 }
 
 .logo {
@@ -20,8 +46,9 @@ html, body {
     float: left;
 }
 
-.logo-text {
-    font-size: 2em;
+.main-logo-text {
+    font-family: starstyled;
+    font-size: 1.5em;
     color: yellow;
 }
 

@@ -1,5 +1,5 @@
-angular.module("HomeView", ["ngRoute"])
+angular.module("MainApp")
 
-.controller('HomeController', ["$scope", function($scope){
+.controller("HomeController", ["$scope", function($scope){
     
 }])
