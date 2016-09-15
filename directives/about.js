@@ -5,7 +5,7 @@ angular.module("MainApp")
         templateUrl: "/templates/directivepeopleinfo.html",
         restrict: "E",
         scope: {
-            about: "="
+            data: "="
         }
     }
 })
