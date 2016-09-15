@@ -1,9 +1,17 @@
-var app = angular.module("MainApp", ["HomeView"])
+var app = angular.module("MainApp", ["ngRoute"])
 
-.config(function ($routeProvider) {
+.config(function($routeProvider) {
     $routeProvider
     .when("/home", {
         controller: "HomeController",
-        templateUrl: "./templates/home.html"
+        templateUrl: "templates/home.html"
+    })
+    .when("/joined", {
+        controller: "JoinedController",
+        templateUrl: "./templates/joined.html"
     });
 })
+
+.controller("MainController", ["$scope", function($scope){
+    
+}])
