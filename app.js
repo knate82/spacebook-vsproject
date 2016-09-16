@@ -4,28 +4,40 @@ var app = angular.module("MainApp", ["ngRoute"])
     $routeProvider
     .when("/home", {
         controller: "HomeController",
-        templateUrl: "templates/home.html"
+        templateUrl: "/home/home.html"
     })
     .when("/joined", {
         controller: "JoinedController",
-        templateUrl: "./templates/joined.html"
+        templateUrl: "./Welcome/joined.html"
     })
     .when("/leia", {
         controller: "LeiaController",
-        templateUrl: "./templates/leia.html"
+        templateUrl: "./leia/leia.html"
     })
     .when("/vader", {
         controller: "VaderController",
-        templateUrl: "./templates/vader.html"
+        templateUrl: "./vader/vader.html"
     })
     .when("/chewy", {
         controller: "ChewyController",
-        templateUrl: "./templates/chewy.html"
+        templateUrl: "./chewy/chewy.html"
     })
     .when("/solo", {
         controller: "SoloController",
-        templateUrl: "./templates/solo.html"
+        templateUrl: "./solo/solo.html"
     })
+    .when("/luke", {
+        controller: "LukeController",
+        templateUrl: "./luke/luke.html"
+    })
+    .when("/yoda", {
+        controller: "YodaController",
+        templateUrl: "./yoda/yoda.html"
+    })
+    .otherwise("/home", {
+        controller: "HomeController",
+        templateUrl: "/home/home.html"
+    });
 })
 
 .controller("MainController", ["$scope", function($scope){

@@ -1,0 +1,28 @@
+<inside-nav></inside-nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 style="text-align:center;">{{name}}</h1>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="well">
+                        <img class="center-block img-responsive" src="/solo/Hansolo-profile-pic.jpg">
+                        <h5 style="text-align:center;">Profile Picture</h5>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" placeholder="What are you doing?" ng-model="newStatus">
+                    <button class="btn btn-warning form-control">Post On Wall</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="panel panel-warning">
+                        <h3 style="text-align:center;" class="panel-heading">About</h3>
+                        <people-info data='data'></people-info>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
