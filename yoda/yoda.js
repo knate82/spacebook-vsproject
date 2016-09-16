@@ -1,8 +1,8 @@
 angular.module("MainApp")
 
-.controller("LeiaController", ["$scope", "HttpService", function ($scope, HttpService) {
+.controller("YodaController", ["$scope", "HttpService", function ($scope, HttpService) {
 
-    $scope.name = "Princess Leia";
+    $scope.name = "Master Yoda I am";
 
     $scope.getInfo = function (num) {
         HttpService.getPerson(num).then(function (data) {
@@ -11,6 +11,6 @@ angular.module("MainApp")
         })
     }
 
-    $scope.getInfo(5);
+    $scope.getInfo(20);
 
 }])

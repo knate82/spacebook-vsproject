@@ -1,0 +1,61 @@
+<inside-nav></inside-nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 style="text-align:center;">Welcome {{name}}!</h1>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="well">
+                        <img class="center-block img-responsive" src="/Welcome/jar-jar-suite.png">
+                        <h5 style="text-align:center;">Profile Picture</h5>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="col-sm-7 panel-body well">
+                        <input type="text" placeholder="What are you doing?" class="form-control" ng-model="newStatus">
+                        <button class="btn btn-lg btn-warning form-control">Update Status</button>
+                    </div>
+                </div>
+                <span class="needs-to-know panel panel-success">
+                <div class="col-sm-7 panel-heading">
+                        <h3 style="text-align:center;">{{question[3].name}} Wrote on your wall!</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-sm-7">
+                            <img class="img-responsive center-block" ng-src="{{question[3].image}}">
+                            <p>Word around the Galaxy is that you are some great Sith Lord.  I'm sorry, but all I can think of when they say that is how annoying you were back in the day.  I hope for the sake of the Empire those rumors are false.</p>
+                        </div>
+                    </div>
+                </div>
+                </span>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="panel panel-success">
+                        <h3 style="text-align:center;" class="panel-heading">About</h3>
+                        <people-info data='data'></people-info>
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="panel panel-success">
+                        <h3 style="text-align:center;" class="panel-heading">People You May Know</h3>
+                        <div class="row  panel-body may-know">
+                            <div class="col-sm-4">
+                                <img class="img-responsive center-block" ng-src="{{mayKnow[0].image}}">
+                                <h6>{{mayKnow[0].name}}</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive center-block" ng-src="{{mayKnow[1].image}}">
+                                <h6>{{mayKnow[1].name}}</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive center-block" ng-src="{{mayKnow[2].image}}">
+                                <h6>{{mayKnow[2].name}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

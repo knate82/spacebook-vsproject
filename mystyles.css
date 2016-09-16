@@ -1,11 +1,11 @@
 @font-face {
     font-family: spacebook;
-    src: url(Starjedi.ttf);
+    src: url(/fonts/Starjedi.ttf);
 }
 
 @font-face {
     font-family: starstyled;
-    src: url(starjhol.ttf);
+    src: url(/fonts/starjhol.ttf);
 }
 
 html, body {
@@ -63,14 +63,19 @@ body {
 
 .main-content {
     padding-bottom: 40px;
-    background-image: url(images/starwars-characters.jpg);
+    background-image: url(/home/starwars-characters.jpg);
     height: 100vh;
 }
 
 footer {
     bottom: 0;
-    position: fixed;
     width: 100%;
     background-color: black;
     height: 40px;
+}
+
+.needs-to-know img {
+    height: 100px;
+    width: auto;
+    float: left;
 }
